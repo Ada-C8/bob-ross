@@ -21,6 +21,31 @@ main img:nth-of-type(even) {
 }
 
 article {
+  /* Removed to make them appear side-by-side */
+  /*clear: both;*/
+
+
+  /* First attempt - works, let's try another*/
+  /*max-width: 40%;
+  display: inline-block;
+  vertical-align: top;*/
+
+
+  min-width: 350px;
+}
+
+article:nth-of-type(odd) {
+  float: left;
+  max-width: 60%;
+}
+
+article:nth-of-type(even) {
+  float: right;
+  max-width: 35%;
+}
+
+/* Avoid collapsing up to the top, now that <main> is "empty" */
+footer {
   clear: both;
 }
 
