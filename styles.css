@@ -2,7 +2,36 @@
 img {
   height: 300px;
   padding: 10px;
+
+
+  /* Make text wrap around the images */
+  /*float: left;
+  clear: right;*/
+
+  /*float: left;*/
+  clear: both;
 }
+
+main img:nth-of-type(odd) {
+  float: left;
+}
+
+main img:nth-of-type(even) {
+  float: right;
+}
+
+article {
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
 
 /* Pad articles a bit */
 article {
